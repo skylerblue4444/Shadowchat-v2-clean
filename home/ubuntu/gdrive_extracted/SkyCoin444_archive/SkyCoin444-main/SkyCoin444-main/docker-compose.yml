@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  shadowchat-node:
+    build: .
+    ports:
+      - "4444:4444"
+    volumes:
+      - ./skycoin444.db:/app/skycoin444.db
+    restart: unless-stopped
